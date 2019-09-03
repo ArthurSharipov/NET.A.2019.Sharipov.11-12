@@ -4,6 +4,11 @@ namespace GeneratorFibonacci
 {
     public class Generator
     {
+        /// <summary>
+        /// Generates Fibonacci numbers.
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         public int[] GeneratorFibonacci(int number)
         {
             int[] array = new int[2];
@@ -43,8 +48,20 @@ namespace GeneratorFibonacci
             return array;
         }
 
+        /// <summary>
+        /// Method for positive numbers.
+        /// </summary>
+        /// <param name="array1"></param>
+        /// <param name="array2"></param>
+        /// <returns></returns>
         private int Positive(int array1, int array2) => array1 + array2;
 
+        /// <summary>
+        /// Method for negative numbers.
+        /// </summary>
+        /// <param name="array1"></param>
+        /// <param name="array2"></param>
+        /// <returns></returns>
         private int Negative(int array1, int array2) => array1 + array2;
     }
 }

@@ -1,5 +1,8 @@
 ﻿namespace BookTask.Logs
 {
+    /// <summary>
+    /// Logging.
+    /// </summary>
     public interface ILogger
     {
         void Trace(string message);

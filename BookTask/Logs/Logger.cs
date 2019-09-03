@@ -2,6 +2,9 @@
 
 namespace BookTask.Logs
 {
+    /// <summary>
+    /// Logging.
+    /// </summary>
     class Logger : ILogger
     {
         private static readonly NLog.Logger logger = LogManager.GetCurrentClassLogger();

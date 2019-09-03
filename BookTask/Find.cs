@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace BookTask
 {
+    /// <summary>
+    /// Looking for a book by isbn.
+    /// </summary>
     public class FindBookByISBN : IFinder
     {
         public FindBookByISBN(string isbn, List<Book> books)
@@ -21,6 +24,9 @@ namespace BookTask
         }
     }
 
+    /// <summary>
+    /// Looking for a book by author.
+    /// </summary>
     public class FindBookByAuthor : IFinder
     {
         public FindBookByAuthor(string author, List<Book> books)
@@ -38,6 +44,9 @@ namespace BookTask
         }
     }
 
+    /// <summary>
+    /// Looking for a book by title.
+    /// </summary>
     public class FindBookByTitle : IFinder
     {
         public FindBookByTitle(string title, List<Book> books)
@@ -55,6 +64,9 @@ namespace BookTask
         }
     }
 
+    /// <summary>
+    /// Looking for a book by publishing house.
+    /// </summary>
     public class FindBookByPublishingHouse : IFinder
     {
         public FindBookByPublishingHouse(string publishingHouse, List<Book> books)
@@ -72,6 +84,9 @@ namespace BookTask
         }
     }
 
+    /// <summary>
+    /// Looking for a book by the year of publishing.
+    /// </summary>
     public class FindBookByTheYearOfPublishing : IFinder
     {
         public FindBookByTheYearOfPublishing(int theYearOfPublishing, List<Book> books)
@@ -89,6 +104,9 @@ namespace BookTask
         }
     }
 
+    /// <summary>
+    /// Looking for a book by numbers of page.
+    /// </summary>
     public class FindBookByNumbersOfPage : IFinder
     {
         public FindBookByNumbersOfPage(int numbersOfPage, List<Book> books)
@@ -106,6 +124,9 @@ namespace BookTask
         }
     }
 
+    /// <summary>
+    /// Looking for a book by price.
+    /// </summary>
     public class FindBookByPrice : IFinder
     {
         public FindBookByPrice(double price, List<Book> books)
